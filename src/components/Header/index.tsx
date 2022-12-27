@@ -11,7 +11,7 @@ interface HeaderProps {
 }
 
 export function Header({ selectedTable, onCancelOrder }: HeaderProps) {
-  const [isModalVisible, setIsModalVisible] = useState(true);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   function handleConfirmCancelOrder() {
     setIsModalVisible(false);
